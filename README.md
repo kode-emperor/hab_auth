@@ -1,3 +1,3 @@
 # hab_auth
 
-A new Flutter project.
+A simple authentication and password manager 

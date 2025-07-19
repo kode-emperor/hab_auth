@@ -61,7 +61,7 @@ class _AccountTileState extends State<AccountTile> {
     return ListTile(
       onTap: copyOtpToClipboard,
       onLongPress: deleteAuth,
-      isThreeLine: true,
+      isThreeLine: false,
       tileColor: const Color.fromARGB(255, 1, 22, 40),
       
       leading:
@@ -135,9 +135,13 @@ class OtpCountDown extends StatelessWidget {
       height: 42, 
       duration: duration,
       initialDuration: 29,
+      isReverse: true,
       autoStart: true,
       fillColor: const Color.fromARGB(38, 60, 118, 255), 
       ringColor: Colors.lightBlueAccent,
+      textStyle: GoogleFonts.inter( 
+        color: Colors.white
+      ),
       controller: controller,
       onComplete: onComplete,
     );
